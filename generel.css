@@ -132,6 +132,33 @@ dt {
   padding: 0.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.productlist article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discounted p:last-child {
+  background: red;
+  padding: 0.4rem;
+}
+
+.productlist article.soldOut img {
+  opacity: 0.5;
+}
+
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: #b0c4b13f;
+  color: black;
+  padding: 1rem;
+}
+
 /* desktop */
 @media (min-width: 601px) {
   .categorylist {

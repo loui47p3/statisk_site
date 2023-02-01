@@ -1,5 +1,5 @@
 body {
-  background-color: #ebebeb;
+  background-color: white;
   font-family: sans-serif;
   margin: 1.5rem;
 }
@@ -58,14 +58,89 @@ img {
   width: 100%;
 }
 
+.smallProduct {
+  padding-bottom: 3rem;
+}
+
+.product_img {
+  padding-top: 2rem;
+}
+
+.h2_product {
+  padding-top: 0;
+}
+
+.info {
+  background-color: #b0c4b13f;
+  border-radius: 10px;
+}
+
+dl {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+dd {
+  padding-bottom: 1rem;
+}
+
+.h2_product {
+  margin: 1rem;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.purchasebox {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1.5px solid #b0c4b1;
+}
+
+form {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+}
+
+.purchasebox form label {
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.purchasebox button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+dt {
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
 /* desktop */
 @media (min-width: 601px) {
   .categorylist {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  img {
+  .product_img {
     width: 100%;
+    padding-top: 2rem;
   }
 
   .productlist main {
@@ -80,5 +155,47 @@ img {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  .main_product {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 4rem;
+  }
+
+  .info {
+    padding-bottom: 3rem;
+    background-color: #b0c4b13f;
+    border-radius: 10px;
+  }
+
+  .purchasebox {
+    position: fixed;
+    width: 28%;
+    margin: 2rem;
+  }
+
+  .h2_product {
+    margin: 2rem;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  dl {
+    margin: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .image_item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    grid-column: 1 / span 2;
   }
 }

@@ -19,33 +19,41 @@
         </nav>
     </header>
     <main>
-        <img src="img/1533.webp" alt="mand i rød trøje">
-        <section class="info">
-            <h2>Produkt information</h2>
-            <dl>
-                <dt>Model navn</dt>
-                <dd>Cat Red T-shirt</dd>
-                <dt>Farve</dt>
-                <dd>Rød</dd>
-                <dt>Inventar nummer</dt>
-                <dd>1533</dd>
-            </dl>
-        </section>
-        <section class="purchasebox">
-            <h3>Cat Red T-shirt</h3>
-            <p>Puma T-shirt</p>
-            <form>
-                <label>Choose a size
-                    <select name="size">
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                        <option>XL</option>
-                    </select>
-                </label>
-                <button>Add to basket</button>
-            </form>
-        </section>
+        <div class="grid_container">
+            <div class="image_item">
+                <img class="product_img" src="img/1533.webp" alt="mand i rød trøje">
+            </div>
+            <div class="column_2">
+                <section class="info">
+                    <h2 class="h2_product">Cat Red T-shirt</h2>
+                    <dl>
+                        <dt>Pris</dt>
+                        <dd>899,-</dd>
+                        <dt>Mærke</dt>
+                        <dd>Puma</dd>
+                        <dt>Farve</dt>
+                        <dd>Rød</dd>
+                        <dt>Inventar nummer</dt>
+                        <dd>1533</dd>
+                    </dl>
+                </section>
+                <section class="purchasebox">
+                    <h3>Cat Red T-shirt</h3>
+                    <p>Puma T-shirt</p>
+                    <form>
+                        <label>Choose a size
+                            <select name="size">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                        </label>
+                        <button>Add to basket</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
 </body>
 

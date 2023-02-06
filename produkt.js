@@ -1,3 +1,4 @@
+/* produktsiden */
 const id = 1532;
 const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
 

@@ -159,8 +159,7 @@ a {
   padding: 1rem;
 }
 
-.productlist article .discounted,
-.productlist article .price span {
+.productlist article .discounted {
   display: none;
 }
 

@@ -1,5 +1,10 @@
 /* produktsiden */
-const id = 1532;
+
+// lav url search objekt
+const urlParams = new URLSearchParams(window.location.search);
+// find id
+console.log(urlParams);
+const id = urlParams.get("id");
 const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
 
 const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;

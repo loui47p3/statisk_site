@@ -20,7 +20,7 @@ function showProduct(product) {
   copy.querySelector("a").href = "produkt.html?id=" + product.id;
   copy.querySelector("h3").textContent = product.productdisplayname;
   copy.querySelector(".price").textContent = product.price + ",-";
-
+  copy.querySelector(".subtle").textContent = product.articletype + " | " + product.brandname;
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy.querySelector(".discounted p").textContent = Math.round(product.price - (product.price * product.discount) / 100) + ",-";
   copy.querySelector(".discounted p+p").textContent = product.discount + "%";

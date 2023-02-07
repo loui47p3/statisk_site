@@ -159,6 +159,11 @@ a {
   padding: 1rem;
 }
 
+.productlist article .discounted,
+.productlist article .price span {
+  display: none;
+}
+
 /* desktop */
 @media (min-width: 601px) {
   .categorylist {

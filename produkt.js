@@ -21,6 +21,7 @@ function visProdukt(produkt) {
   document.querySelector("#produktpris").textContent = produkt.price;
   document.querySelector("#produktnavn2").textContent = produkt.productdisplayname;
   document.querySelector("#produktmærke").textContent = produkt.brandname;
+  document.querySelector("#id").textContent = produkt.id;
   document.querySelector("img").src = imagePath;
 }
 
